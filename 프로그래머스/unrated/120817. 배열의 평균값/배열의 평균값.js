@@ -1,4 +1,4 @@
 function solution(numbers) {
-    return numbers.reduce((a,b) => a + b)/numbers.length;
-
+    let result = numbers.reduce((a,b) => a + b)/numbers.length;
+    return result;
 }
