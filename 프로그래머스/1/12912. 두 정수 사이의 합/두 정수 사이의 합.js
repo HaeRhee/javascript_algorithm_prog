@@ -1,13 +1,11 @@
 function solution(a, b) {
     let sum = 0;
+    let min = Math.min(a,b);
+    let max = Math.max(a,b);
     if (a === b){
         return a;
-    }else if(a > b){
-        for(let i = b; i <= a ; i++){
-            sum += i
-        }
-    }else if(b > a){
-        for(let i = a; i <=b ; i++){
+    }else{
+        for (let i=min; i <= max ; i++){
             sum += i
         }
     }
