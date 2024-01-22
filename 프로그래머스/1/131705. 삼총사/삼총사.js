@@ -6,7 +6,7 @@ function solution(number) {
   for (var i = 0; i < sortNum.length - 2; i++) {
     for (var j = i + 1; j < sortNum.length - 1; j++) {
       for (var k = j + 1; k < sortNum.length; k++) {
-        if (sortNum[i] + sortNum[j] + sortNum[k] == 0) 
+        if (sortNum[i] + sortNum[j] + sortNum[k] === 0) 
             answer++;
       }
     }
