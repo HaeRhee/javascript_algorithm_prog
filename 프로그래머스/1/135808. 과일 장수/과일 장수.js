@@ -1,10 +1,12 @@
 function solution(k, m, score) {
-    let answer = 0;
-    let sortScore = score.sort((a,b) => a-b)
-    let scoreLength = score.length
-    for (let i = scoreLength-m; i>=0; i-=m){
-        answer +=score[i]*m
-    }
+    const cnt = []
+    var li = score.sort((a,b) => b-a);
+   
+    let sum =0
     
-    return answer;
+    for(let i = 0; i+m <= li.length; i+=m){
+        sum+= li[i+m-1]*m
+    }
+
+    return sum;
 }
