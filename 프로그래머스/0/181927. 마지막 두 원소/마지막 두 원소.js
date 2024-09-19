@@ -1,5 +1,4 @@
 function solution(num_list) {
-    console.log(num_list)
     let lastNumber = num_list[num_list.length - 1];
     let secondLastNumber = num_list[num_list.length - 2];
     
