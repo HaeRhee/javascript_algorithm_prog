@@ -13,5 +13,6 @@ function solution(arr) {
             i-- 
         }
     }
+    
     return stk;
 }
