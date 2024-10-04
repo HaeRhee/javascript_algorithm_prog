@@ -6,5 +6,4 @@ function solution(number) {
     })
     
     return sum % 9
-    
 }
